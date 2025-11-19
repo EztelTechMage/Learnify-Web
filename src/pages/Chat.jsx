@@ -18,7 +18,7 @@ export default function Chat() {
     api.get(`/courses/${id}/chat`).then(({ data }) => setMessages(data.messages || []))
 
     // Setup socket
-    const baseURL = 'https://learnifybackend.vercel.app:5000'
+    const baseURL = 'https://learnify-api.vercel.app:5000'
     socketRef.current = io(baseURL, {
       auth: { token }
     })

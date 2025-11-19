@@ -1,7 +1,7 @@
 // client/src/lib/api.js
 import axios from 'axios'
 
-const baseURL = "https://learnifybackend.vercel.app:5000"
+const baseURL = "https://learnify-api.vercel.app:5000"
 
 export const api = axios.create({
   baseURL,
