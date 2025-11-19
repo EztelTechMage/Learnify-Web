@@ -1,7 +1,7 @@
 // client/src/lib/api.js
 import axios from 'axios'
 
-const baseURL = "https://learnify-api-u407.onrender.com"
+const baseURL = "https://learnify-api-u407.onrender.com/api"
 
 export const api = axios.create({
   baseURL,
