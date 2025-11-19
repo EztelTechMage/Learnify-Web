@@ -18,7 +18,7 @@ export default function Chat() {
     api.get(`/courses/${id}/chat`).then(({ data }) => setMessages(data.messages || []))
 
     // Setup socket
-    const baseURL = 'https://learnify-api-u407.onrender.com'
+    const baseURL = 'https://learnify-api-u407.onrender.com/api'
     socketRef.current = io(baseURL, {
       auth: { token }
     })
